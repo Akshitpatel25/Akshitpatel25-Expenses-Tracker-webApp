@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <div class="w-screen h-screen bg-black flex justify-center items-center">
+    <div class="w-96 p-4 bg-slate-600 flex flex-col gap-y-4 rounded-md">
+        <h1 class="text-white font-thin text-2xl font-serif text-center">Expenses Tracker</h1>
+
+        <!-- expenses input -->
+        <div class="w-full flex gap-x-3">
+            <input type="text" placeholder="Name" class="expense_name pl-1 bg-transparent border w-1/2 rounded-sm">
+            <input type="number" placeholder="Price" class="expense_price pl-1 bg-transparent border w-1/2 rounded-sm">
+            <button class="expense_addbtn borer pr-4 pl-4 text-black bg-yellow-300 rounded-sm">ADD</button>
+        </div>
+
+        <!-- expenses tracker -->
+         <div class="expense_tracker w-full p-2 bg-black rounded-sm flex flex-col gap-y-2">
+            <h2 class="text-white text-xl font-serif">Expenses History :</h2>
+         </div>
+
+        <!-- expenses Total -->
+         <div class="w-full p-2 bg-black rounded-sm flex flex-col gap-y-2">
+            <h2 class="text-white text-xl">Total: <span class="total_price"></span></h2>
+         </div>
+    </div>
+  </div>
+</body>
+</html>
